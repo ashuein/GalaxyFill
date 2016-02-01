@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Galaxyfill : A program for filling up the missing part of protein structure">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Galaxyfill</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/seoklab/GalaxyFill">View on GitHub</a>
+
+          <h1 id="project_title">Galaxyfill</h1>
+          <h2 id="project_tagline">A program for filling up the missing part of protein structure</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/seoklab/GalaxyFill/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/seoklab/GalaxyFill/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="galaxyfill-a-program-for-filling-up-the-missing-part-of-protein-structure" class="anchor" href="#galaxyfill-a-program-for-filling-up-the-missing-part-of-protein-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GalaxyFill: A program for filling up the missing part of protein structure</h1>
+
+<h2>
+<a id="0-remark" class="anchor" href="#0-remark" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>0. Remark</h2>
+
+<p>The GalaxyFill distribution version supports only <strong>Linux 64-bit</strong> OS and binary files compiled with serial option.
+<strong>Linux 32-bit</strong> OS or binary files compiled with MPI option are not supported.</p>
+
+<h2>
+<a id="1-installation" class="anchor" href="#1-installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. Installation</h2>
+
+<ol>
+<li>
+<p>Download the GalaxyFill program</p>
+
+<ul>
+<li>Download a copy of GalaxyFill
+
+<ul>
+<li><a href="https://github.com/seoklab/GalaxyFill">https://github.com/seoklab/GalaxyFill</a></li>
+<li><a href="https://github.com/seoklab/GalaxyFill/archive/master.zip">https://github.com/seoklab/GalaxyFill/archive/master.zip</a></li>
+</ul>
+</li>
+<li>Or, clone the GalaxyFill git repository 
+
+<ul>
+<li>git clone <a href="https://github.com/seoklab/GalaxyFill.git">https://github.com/seoklab/GalaxyFill.git</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Unzip and place the downloaded files</p>
+
+<ul>
+<li>unzip GalaxyFill.zip</li>
+<li>mv GalaxyFill $GALAXY_HOME<br>
+(<em>example</em>: GALAXY_HOME=/applic/GalaxyFill)</li>
+</ul>
+</li>
+<li>
+<p>Check the downloaded files</p>
+
+<ul>
+<li>There should exist:</li>
+<li>bin: directory for executables<br>
+There should be build_initial_model and <strong>GalaxyFill</strong>
+</li>
+<li>data: directory for data files</li>
+<li>examples: directory for example files</li>
+</ul>
+</li>
+<li>
+<p>Set environment variable</p>
+
+<ul>
+<li>export GALAXY_HOME=$GALAXY_HOME<br>
+(<em>example</em>: export GALAXY_HOME=/applic/GalaxyFill)</li>
+</ul>
+</li>
+</ol>
+
+<h2>
+<a id="2-how-to-use-galaxyfill" class="anchor" href="#2-how-to-use-galaxyfill" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. How to use GalaxyFill</h2>
+
+<ol>
+<li>
+<p>Prepare the input protein structure in PDB format</p>
+
+<ul>
+<li>You have to provide a protein structure in the PDB file format for structure refinement.
+Gaps (or chain breaks) are highly prohibited in the middle of the initial protein structure.</li>
+</ul>
+</li>
+<li>
+<p>Run GalaxyFill</p>
+
+<ul>
+<li>Usage: $GALAXY_HOME/bin/GalaxyFill [-h] [-p INPUT PDB File] [-s INPUT FASTA File]</li>
+<li>Input arguments and options:<br>
+
+<ul>
+<li> -p or --pdb      : Input protein structure file in PDB format (<strong>mendatory</strong>)<br>
+</li>
+<li> -s or --seq      : Input protein sequence file in FASTA format (<strong>mendatory</strong>)<br>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Output of GalaxyFill</p>
+
+<ul>
+<li>The final refined model will be <strong>${Input PDB prefix}_init.pdb</strong>
+</li>
+</ul>
+</li>
+</ol>
+
+<h2>
+<a id="3-release-log" class="anchor" href="#3-release-log" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Release log</h2>
+
+<ul>
+<li>01 Feb 2016: The first release of GalaxyFill</li>
+</ul>
+
+<h2>
+<a id="4-references" class="anchor" href="#4-references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. References</h2>
+
+<ul>
+<li>E. A. Coutsias, C. Seok, M. P. Jacobson, and K. A. Dill, A Kinematic View of Loop Closure, J. Comput. Chem. 25, 510-528 (2004).</li>
+</ul>
+
+<h2>
+<a id="5-contact" class="anchor" href="#5-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. Contact</h2>
+
+<ul>
+<li><a href="mailto:chaok@snu.ac.kr">chaok@snu.ac.kr</a></li>
+<li><a href="mailto:compbio.galaxy@gmail.com">compbio.galaxy@gmail.com</a></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Galaxyfill maintained by <a href="https://github.com/seoklab">seoklab</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# cmd
+../../bin/GalaxyFill -p input.pdb -s input.fa
+
+# input:  ./input.pdb ./input.fa
+# output: ./input_init.pdb

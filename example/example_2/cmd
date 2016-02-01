@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# cmd
+../../bin/GalaxyFill -p 3cyn.pdb -s 3cyn.fa
+
+# 3cyn:  ./3cyn.pdb ./3cyn.fa
+# output: ./3cyn_init.pdb

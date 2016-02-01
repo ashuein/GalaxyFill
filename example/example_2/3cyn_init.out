@@ -1,0 +1,40 @@
+ Reading fix_atom_file.
+Check global input consistency...
+Done.
+- Finished with read_parameters.
+  Reading topology file: /home/huhlim/junk/GalaxyFill/data/topology_charmm22ph.in
+  Reading topology file: /home/huhlim/junk/GalaxyFill/data/topology_charmm22ph_nt.in
+  Reading topology file: /home/huhlim/junk/GalaxyFill/data/topology_charmm22ph_ct.in
+- Finished with read_topology_geo.
+  Reading topology file: /home/huhlim/junk/GalaxyFill/data/topology_eng_charmm22ph.in
+  Num_ref_res =    77
+- Finished with read_topology_eng.
+- Rotamer setup
+  Reading rotamer library file  /home/huhlim/junk/GalaxyFill/data/bbdep02.May.sortlib
+  Total number of rotamers in rot lib file      466829
+  Reading infile_chi_def file  /home/huhlim/junk/GalaxyFill/data/def_chi.in
+  Random seed =     161430
+Task: build_initial_model
+============================================================
+  Reading sequence from pdb file: 3cyn_init.pdb
+    There seems to be break in chain.  127 A GLY   128 A GLU  C-N bond length is    22.583
+    There seems to be break in chain.  316 B GLY   317 B GLU  C-N bond length is    22.671
+    There seems to be break in chain.  505 C GLY   506 C GLU  C-N bond length is    22.591
+  Reading pdb file: 3cyn_init.pdb
+- Add missing atoms activated.
+  Number of added heavy atoms =     0
+  Total number of added atoms =     0
+  n_unplaced =     0
+- Fix type "all" activated: All atoms except ULR/USC are fixed.
+- Energy: MM energy activated.
+  Ramachandran score mode is set to "neighbor-dependent".
+ - Connecting Terms (trials):     1   15
+ - Connecting Loops (trials):   120  127
+ - Connecting Terms (trials):   190  205
+ - Connecting Loops (trials):   309  316
+ - Connecting Terms (trials):   379  391
+ - Connecting Loops (trials):   498  505
+------------------------------------------------------------
+Total User Time =      6.599 sec
+           0 dy  0 hr  0 min  6.599 sec
+------------------------------------------------------------

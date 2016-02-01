@@ -1,0 +1,15 @@
+data_directory    /home/huhlim/junk/GalaxyFill/data
+top_type          polarh
+!
+print_level       30
+!
+infile_pdb        3cyn_init.pdb
+outfile_prefix    3cyn_init
+fix_atom_file     3cyn_init_init.fix
+!
+close_loop      1   15
+close_loop    120  127
+close_loop    190  205
+close_loop    309  316
+close_loop    379  391
+close_loop    498  505

@@ -1,7 +1,0 @@
-#!/bin/sh
-
-# cmd
-../bin/GalaxyFill.py -p input.pdb -s input.fa
-
-# input:  ./input.pdb ./input.fa
-# output: ./input_init.pdb

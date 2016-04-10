@@ -42,7 +42,7 @@ The GalaxyFill distribution version supports only **Linux 64-bit** OS and binary
     *  -t or --title    : Running title for GalaxyFill (optional, default=${Input PDB prefix})
 
 3. Output of GalaxyFill
- * The final refined model will be **${Input PDB prefix}_fll.pdb** or designated by "-o/--out" option
+ * The final refined model will be **${Input PDB prefix}_fill.pdb** or designated by "-o/--out" option
 
 ##3. Release log
 * 10 Apr 2016: Local energy optimization on the filled residues

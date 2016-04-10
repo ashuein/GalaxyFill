@@ -119,6 +119,8 @@ Gaps (or chain breaks) are highly prohibited in the middle of the initial protei
 </li>
 <li> -s or --seq      : Input protein sequence file in FASTA format (<strong>mendatory</strong>)<br>
 </li>
+<li> -o or --out      : Output protein structure file name (optional, default=${Input PDB prefix}_fill.pdb)</li>
+<li> -t or --title    : Running title for GalaxyFill (optional, default=${Input PDB prefix})</li>
 </ul>
 </li>
 </ul>
@@ -127,8 +129,7 @@ Gaps (or chain breaks) are highly prohibited in the middle of the initial protei
 <p>Output of GalaxyFill</p>
 
 <ul>
-<li>The final refined model will be <strong>${Input PDB prefix}_init.pdb</strong>
-</li>
+<li>The final refined model will be <strong>${Input PDB prefix}_fill.pdb</strong> or designated by "-o/--out" option</li>
 </ul>
 </li>
 </ol>
@@ -137,6 +138,8 @@ Gaps (or chain breaks) are highly prohibited in the middle of the initial protei
 <a id="3-release-log" class="anchor" href="#3-release-log" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Release log</h2>
 
 <ul>
+<li>10 Apr 2016: Local energy optimization on the filled residues</li>
+<li>09 Apr 2016: Added optional arguments: -o and -t</li>
 <li>01 Feb 2016: The first release of GalaxyFill</li>
 </ul>
 

@@ -38,13 +38,14 @@ The GalaxyFill distribution version supports only **Linux 64-bit** OS and binary
  * Input arguments and options:     
     *  -p or --pdb      : Input protein structure file in PDB format (**mendatory**)    
     *  -s or --seq      : Input protein sequence file in FASTA format (**mendatory**)    
-    *  -o or --out      : Output protein structure file name (optional, default=${INPUT}_init.pdb)
-    *  -t or --title    : Running title for GalaxyFill (optional, default=${INPUT})
+    *  -o or --out      : Output protein structure file name (optional, default=${Input PDB prefix}_fill.pdb)
+    *  -t or --title    : Running title for GalaxyFill (optional, default=${Input PDB prefix})
 
 3. Output of GalaxyFill
- * The final refined model will be **${Input PDB prefix}_init.pdb**
+ * The final refined model will be **${Input PDB prefix}_fll.pdb** or designated by "-o/--out" option
 
 ##3. Release log
+* 10 Apr 2016: Local energy optimization on the filled residues
 * 09 Apr 2016: Added optional arguments: -o and -t
 * 01 Feb 2016: The first release of GalaxyFill
 
